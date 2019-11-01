@@ -2,7 +2,8 @@
   "name": "monty-frontend",
   "version": "1.0.0",
   "scripts": {
-    "start-frontend": "webpack --config config/webpack.dev.js --watch",
+    "start-frontend": "webpack-dev-server --config config/webpack.dev.js",
+    "start-frontend2": "webpack --config config/webpack.dev.js --watch --hot",
     "build-frontend": "webpack --config config/webpack.dev.js"
   },
   "description": "Monty app frontend",
@@ -24,15 +25,19 @@
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.8.0",
     "react-hot-loader": "^4.12.15",
+    "redux-devtools": "^3.5.0",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.9",
     "webpack-dev-server": "^3.8.2",
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
+    "@hot-loader/react-dom": "^16.10.2",
     "core-js": "^3.3.2",
     "react": "^16.10.2",
-    "react-dom": "^16.10.2",
+    "react-dom": "^16.11.0",
+    "react-redux": "^7.1.1",
+    "redux": "^4.0.4",
     "regenerator-runtime": "^0.13.3"
   }
 }

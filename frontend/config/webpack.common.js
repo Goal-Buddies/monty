@@ -6,13 +6,14 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 const paths = require('./paths')
 
+
 module.exports = {
   entry: {
-    main: `${paths.src}/index.js`,
+    main: `${paths.app}/index.js`,
   },
 
   output: {
-    path: paths.dist,
+    path: paths.output,
     filename: 'index.js',
   },
 
@@ -20,8 +21,8 @@ module.exports = {
     extensions: ['.js', '.jsx'],
     alias: {
       'react-dom': '@hot-loader/react-dom',
-      '@': paths.src,
-      // '@main': paths.srcMain,
+      '@': paths.frontend,
+      '@app': paths.app,
       // '@screens': paths.srcScreens,
       // '@layouts': paths.srcLayouts,
       // '@components': paths.srcComponents,
@@ -86,7 +87,7 @@ module.exports = {
 
     new HtmlWebpackPlugin({
       title: 'Monty',
-      // template: paths.templates.index,
+      template: paths.templates.home,
       cache: false,
       alwaysWriteToDisk: true,
     }),

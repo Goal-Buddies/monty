@@ -8,9 +8,15 @@ const fs = require('fs')
 const appDirectory = fs.realpathSync(process.cwd())
 const resolveApp = relativePath => path.resolve(appDirectory, relativePath)
 
+
 module.exports = {
-  dist: resolveApp('../output'),
-  src: resolveApp('./'),
+  frontend: resolveApp('./'),
+  config: resolveApp('config'),
+  output: resolveApp('../output'),
+  app: resolveApp('src/app'),
+  templates: {
+    home: resolveApp('src/app/home/template.ejs'),
+  },
   // srcMain: resolveApp('src/main'),
   // srcComponents: resolveApp('src/components'),
   // srcLayouts: resolveApp('src/layouts'),
@@ -18,8 +24,4 @@ module.exports = {
   // assets: resolveApp('assets'),
   // images: resolveApp('assets/images'),
   // styles: resolveApp('assets/styles'),
-  // templates: {
-  //   index: resolveApp('src/templates/index.ejs'),
-  // },
-  config: resolveApp('config')
 }
