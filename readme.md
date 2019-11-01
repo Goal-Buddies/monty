@@ -24,4 +24,4 @@ $ yarn build-frontend
 
 `backend on port 3000, hotloader frontend on port 9011`
 
-`TODO: learn how to enable cross-origin resource sharing`
+`TODO: learn how to enable cross-origin resource sharing on Express`
