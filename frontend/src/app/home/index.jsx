@@ -8,7 +8,7 @@ import React from 'react'
 
 
 const App = () => (
-    <div>React-Redux App 11</div>
+    <div>React-Redux App</div>
 )
 
 

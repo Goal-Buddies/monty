@@ -10,5 +10,5 @@ import App from '@app/home'
 
 ReactDOM.render(
     <App />,
-    document.querySelector('#root')
+    document.getElementById('root')
 )
