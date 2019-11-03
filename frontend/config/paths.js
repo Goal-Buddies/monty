@@ -14,6 +14,8 @@ module.exports = {
   config: resolveApp('config'),
   output: resolveApp('../output'),
   app: resolveApp('src/app'),
+  styles: resolveApp('src/styles'),
+  assets: resolveApp('src/styles/assets'),
   templates: {
     home: resolveApp('src/app/home/template.ejs'),
   },
@@ -21,7 +23,5 @@ module.exports = {
   // srcComponents: resolveApp('src/components'),
   // srcLayouts: resolveApp('src/layouts'),
   // srcScreens: resolveApp('src/screens'),
-  // assets: resolveApp('assets'),
   // images: resolveApp('assets/images'),
-  // styles: resolveApp('assets/styles'),
 }

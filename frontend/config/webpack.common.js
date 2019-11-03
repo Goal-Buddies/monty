@@ -1,7 +1,7 @@
 // const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
-// const CopyPlugin = require('copy-webpack-plugin')
+const CopyPlugin = require('copy-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 const paths = require('./paths')
@@ -14,7 +14,7 @@ module.exports = {
 
   output: {
     path: paths.output,
-    filename: 'index.js',
+    filename: 'app.js',
   },
 
   resolve: {
@@ -23,11 +23,11 @@ module.exports = {
       'react-dom': '@hot-loader/react-dom',
       '@': paths.frontend,
       '@app': paths.app,
+      '@styles': paths.styles,
+      '@assets': paths.assets,
       // '@screens': paths.srcScreens,
       // '@layouts': paths.srcLayouts,
       // '@components': paths.srcComponents,
-      // '@styles': paths.styles,
-      // '@assets': paths.assets,
     },
   },
 
@@ -92,9 +92,9 @@ module.exports = {
       alwaysWriteToDisk: true,
     }),
 
-    // new CopyPlugin([
-    //   { from: `${paths.assets}/favicon.ico`, to: './' },
-    // ]),
+    new CopyPlugin([
+      { from: `${paths.assets}/favicon.ico`, to: './' },
+    ]),
 
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
