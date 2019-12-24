@@ -42,14 +42,19 @@ module.exports = {
         test: /\.css$/,
         use: [
           {
-            loader: MiniCssExtractPlugin.loader,
-            options: {
-              publicPath: '../',
-              hmr: process.env.NODE_ENV === 'development',
-            },
+            loader: 'style-loader'
           },
-          { loader: 'css-loader' },
-        ],
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 1,
+              modules: {
+                localIdentName: '[name]__[local]___[hash:base64:5]'
+              },
+              sourceMap: true
+            }
+          }
+        ]
       },
 
       {
