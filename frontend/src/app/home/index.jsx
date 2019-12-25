@@ -9,7 +9,27 @@ import styles from '@styles/home.css';
 
 
 const App = () => (
-    <div className={styles.chew}>React-Redux App</div>
+    <section className={styles.loginForm}>
+        <div className={styles.icons}></div>
+
+
+        <div className={styles.header}>
+            <div className={styles.title}>
+                <span>Monty</span>
+            </div>
+
+            <div className={styles.subTitle}>
+                <span>shopping planner</span>
+            </div>
+        </div>
+
+
+        <div className={styles.form}>
+            <input type="password" className={styles.input} placeholder="Enter password" />
+
+            <button className={styles.button}>Login</button>
+        </div>
+    </section>
 )
 
 

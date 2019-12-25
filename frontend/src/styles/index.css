@@ -1,4 +1,14 @@
 body {
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
+    color: white;
+
+    background-color: #2F3754;
+}
+
+input::placeholder {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 45%);
 }

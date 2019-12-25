@@ -1,4 +1,84 @@
-.chew {
+.loginForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 96px;
+    font-weight: 700;
+    color: #8691B0;
+    text-transform: uppercase;
+
+    opacity: 45%;
+    user-select: none;
+    z-index: 1;
+}
+
+.subTitle {
+    font-size: 36px;
+    font-weight: 400;
+
+    margin-top: -35px;
+    user-select: none;
+    z-index: 2;
+}
+
+.form {
+    margin-top: 40px;
+}
+
+.input {
+    border: 0;
+    outline: 0;
+
+    color: black;
+
+    width: 240px;
+    padding: 12px 15px;
+    border-radius: 3px;
+    background: #fff;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0 , .1);
+}
+
+.button {
+    display: inline-block;
+
+	border: 0;
+	outline: 0;
+	padding: 0;
+
     font-size: 14px;
     font-weight: 700;
+    color: white;
+    
+    background: #637EFF;
+    padding: 12px 30px;
+    margin-left: 15px;
+    
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
+    border-radius: 3px;
+    
+	transition: all 200ms ease-in;
+	cursor: pointer;
+    user-select: none;
+}
+
+.button:hover {
+    background: #637EFF;
+}
+
+.button:active {
+    background: #637EFF;
+    box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, .2);
 }
