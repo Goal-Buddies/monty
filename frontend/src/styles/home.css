@@ -38,17 +38,31 @@
     margin-top: 40px;
 }
 
+.inputGroup {
+    display: inline-block;
+}
+
 .input {
+    position: relative;
+
     border: 0;
     outline: 0;
 
     color: black;
 
-    width: 240px;
-    padding: 12px 15px;
+    width: 180px;
+    padding: 12px 32px 12px;
     border-radius: 3px;
     background: #fff;
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0 , .1);
+    z-index: 1;
+}
+
+.inputGroup svg {
+    position: absolute;
+    
+    margin: 12px !important;
+    z-index: 2;
 }
 
 .button {
@@ -63,7 +77,7 @@
     color: white;
     
     background: #637EFF;
-    padding: 12px 30px;
+    padding: 12px 20px;
     margin-left: 15px;
     
     box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
@@ -81,4 +95,8 @@
 .button:active {
     background: #637EFF;
     box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, .2);
+}
+
+button svg {
+    margin-left: 8px !important;
 }

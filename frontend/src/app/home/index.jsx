@@ -7,6 +7,9 @@ import styles from '@styles/home.css';
 // import "core-js/stable";
 // import "regenerator-runtime/runtime";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAngleRight, faUnlock } from '@fortawesome/free-solid-svg-icons'
+
 
 const App = () => (
     <section className={styles.loginForm}>
@@ -25,9 +28,15 @@ const App = () => (
 
 
         <div className={styles.form}>
-            <input type="password" className={styles.input} placeholder="Enter password" />
+            <div className={styles.inputGroup}>
+                <FontAwesomeIcon icon={faUnlock} color="#637EFF" pull="right" />
+                <input type="password" className={styles.input} placeholder="Enter password" />
+            </div>
 
-            <button className={styles.button}>Login</button>
+            <button className={styles.button}>
+                <span>Login</span>
+                <FontAwesomeIcon icon={faAngleRight} pull="right" />
+            </button>
         </div>
     </section>
 )
