@@ -38,6 +38,10 @@ const App = () => (
                 <FontAwesomeIcon icon={faAngleRight} pull="right" />
             </button>
         </div>
+
+        <div className={styles.copy}>
+            <span>Goal Buddies, 2020</span>
+        </div>
     </section>
 )
 
