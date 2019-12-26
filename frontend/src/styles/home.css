@@ -110,4 +110,6 @@ button svg {
     font-weight: 500;
 
     bottom: 20px;
+    
+    user-select: none;
 }
