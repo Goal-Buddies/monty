@@ -2,7 +2,6 @@
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
 
     height: 100vh;
@@ -13,6 +12,8 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    margin-top: 15%;
 }
 
 .title {
