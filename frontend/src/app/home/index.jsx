@@ -30,11 +30,11 @@ const App = () => (
         <div className={styles.form}>
             <div className={styles.inputGroup}>
                 <FontAwesomeIcon icon={faUnlock} color="#637EFF" pull="right" />
-                <input type="password" className={styles.input} placeholder="Enter password" />
+                <input type="password" className={styles.input} placeholder="Secret password" autofocus="true" />
             </div>
 
             <button className={styles.button}>
-                <span>Login</span>
+                <span>Enter</span>
                 <FontAwesomeIcon icon={faAngleRight} pull="right" />
             </button>
         </div>
